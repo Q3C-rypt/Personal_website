@@ -8,7 +8,6 @@ const Menu = () => (
   <>
   <p><Link to = "/home">Home</Link></p>
   <p><Link to = "/Projects">Projects</Link></p>
-  {/* <p><Link to = "/about_me">About me</Link></p> */}
   <p><Link to = "/extra">Extra-Curriculars</Link></p>
   </>
 );
@@ -23,7 +22,6 @@ const Header = () => {
           <img className = "person" src = {person} alt = "person"/>
         
           <div className= "navbar-links">
-            
             <div className= "navbar-links__logo">
               
             </div>
@@ -31,6 +29,7 @@ const Header = () => {
               <Menu />
             </div>
           </div>
+
           <div className = "navbar__menu">
             {toggleMenu 
               ? <RiCloseLine color = "fff" size = {27} onClick = {() => setToggleMenu(false)}/>

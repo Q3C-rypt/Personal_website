@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className = "App">
       <Routes>
-        <Route index element={<FrontPage />} path = "/Personal_website"/>
+        <Route index element={<FrontPage />}/>
         <Route path = "/home" element = {<Home/>} />
         <Route path = "/Projects" element = {<Projects/>} />
         <Route path = "/about_me" element = {<About_me/>} />

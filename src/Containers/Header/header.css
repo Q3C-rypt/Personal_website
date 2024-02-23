@@ -1,17 +1,14 @@
 .nav__bar {
     display: flex ;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-
-   
+    width: fit-content;
     padding: 1rem 6rem;
 }
 
 .gradient {
     background: transparent;
-    
 }
-
 
 .gradient__text{
     background: var(--gradient-text);
@@ -36,13 +33,14 @@
 .nav__bar img{
     width: 50px;
     height: 50px;
+    margin-right: 2rem;
 }
 
 .navbar__container{
     filter: none; 
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
+    justify-content: end;
 }
 
 .navbar__container p,
