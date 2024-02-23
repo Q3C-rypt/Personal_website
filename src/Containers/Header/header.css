@@ -1,0 +1,132 @@
+.nav__bar {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+
+   
+    padding: 1rem 6rem;
+}
+
+.gradient {
+    background: transparent;
+    
+}
+
+
+.gradient__text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+
+.navbar-links__logo{
+    margin-right: 2rem;
+}
+
+.nav__bar img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar__container{
+    filter: none; 
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navbar__container p,
+.navbar-menu__container p{
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0rem 2rem;
+    cursor: pointer;
+
+}
+
+.navbar__menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.navbar__menu svg{
+    cursor: pointer;
+}
+
+.navbar-menu__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-menu__container p {
+    margin: 1rem 0;
+}
+
+/* for computers*/
+@media screen and (max-width: 1050px) {
+    
+}
+
+/* for screens like ipad*/
+@media screen and (max-width: 700px) {
+    .nav__bar{
+        padding: 2rem 4rem;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+    
+        
+    .navbar__container {
+            display: none;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    .nav__bar{
+        padding: 2rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .nav__bar{
+        padding: 2rem 4rem;
+    }
+    
+    .navbar-menu__container {
+        top: 20px;
+    }
+
+}

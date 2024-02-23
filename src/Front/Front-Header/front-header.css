@@ -1,0 +1,44 @@
+*{
+    overflow: hidden;
+}
+
+.front{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    animation: fade 2s forwards;
+    animation-delay: 7s;
+}
+
+.navbar {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    display: flex;
+}
+
+p{
+    margin-right: 2rem;
+}
+
+@media (max-width: 700px) {
+    .navbar{
+        padding-bottom: 3rem;
+        margin: auto;
+        font-size: 1rem;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

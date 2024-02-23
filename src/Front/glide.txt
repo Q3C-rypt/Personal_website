@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  height:100dvh;
+  font-family:'Roboto';
+    font-weight: 300;
+    font-size: 5dvh;
+    padding-top: 6vh;
+    width:800px;
+    overflow:hidden;
+    
+}
+
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.hi{ 
+    color: rgb(1, 177, 217);
+    display: flex;
+    position: relative;
+    
+    animation: showup 2s 1;
+    animation: reveal 7s 1;
+
+}
+
+.name{
+    color: rgb(1, 177, 217);
+    display: flex;
+    position: relative;
+    font-size: 42px;
+   
+    padding-top: 10rem;
+    padding-left: 10rem;
+    
+   animation: showup 12s 1;
+    animation: reveall 2s 1;
+    
+
+}
+
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    80% {opacity:1;}    
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left: -800px; }
+    20% { margin-left: -800px; }
+    35% { margin-left: 0px;  }
+    50% {margin-left: 0px;}
+    100% { margin-left: 0px; } 
+}   
+
+@keyframes reveal {
+    0% {opacity:0; width:0px;}
+    20% {opacity:0; width:0px;}
+    30% {opacity:1; width:355px;}
+    80% {opacity:1; width:355px}
+    100% {opacity:1;width:355px;}
+}
+
+@keyframes reveall {
+    0% {opacity:0; width:0px;}
+    20% {opacity:0; width:0px;}
+    30% {opacity:1; width:800px;}
+    80% {opacity:1; width: 800px}
+    100% {opacity:1;width:800px;}
+}
+
+
+
+@media (max-width: 700px){
+
+    body{
+        padding-left: 2rem;
+    }
+
+    .hi{
+        animation: showup 10s 1; 
+    }
+    
+    .wave{
+        margin-top: -14dvh;
+        left: 8rem;
+    }
+
+}
+
+
+

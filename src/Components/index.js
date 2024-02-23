@@ -1,0 +1,4 @@
+export {default as About_me} from './About_Me/About_me';
+export {default as Home} from './Home/Home';
+export {default as Projects} from './Projects/Projects';
+export {default as Extra_Cur} from './ExtraCur/ExtraCur';

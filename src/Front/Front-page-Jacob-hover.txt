@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
+import { color, motion } from 'framer-motion';
+import '../index.css'
+
+import './front_page.css';
+
+function FrontPage(){
+    const [showcard, setShowCard] = useState(false)
+    return (
+        <div className="background">
+            <div className= " boarder customHeight"> 
+                <div className="name">
+                    <div 
+                        style = {{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            height: "99vh",
+                            background: "transparent"
+                        }}
+                    >
+                        <motion.div
+                            style = {{
+                                background: "transparent",
+                                padding: "2rem 2rem",
+                                borderRadius: "100vh",
+                            }}
+                            whileHover={{
+                                    textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                                    
+                                    scale: 1.5
+                            }}
+                            transition={{
+                                layout: {
+                                    duration: 1,
+                                    type: "spring"
+                                }
+                            }}
+                            layout
+                            onClick={() => setShowCard(!showcard)}
+                        >
+                            <p><Link to = "/home">Jacob Antonious</Link></p>
+                        </motion.div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    )
+}
+
+export default FrontPage
+
+CSS:
+
+.name {
+    color: aliceblue;
+    display: flex;
+    font-size: x-large;
+    
+}
+
+.boarder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;  
+}
+
+.customHeight{
+    min-height: 100vh; /*100% height, so when you adjust it's accurate to the screen size */
+}
+
+.background {
+    background: black;
+}
+
+/* background: radial-gradient(ellipse at 50% 50%, rgba(96, 92, 96, 1) 0%, rgba(0, 0, 0, 1) 28%); */
+
+  

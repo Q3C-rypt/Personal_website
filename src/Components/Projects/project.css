@@ -1,0 +1,7 @@
+.card{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px;
+}
