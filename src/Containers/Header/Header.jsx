@@ -16,35 +16,54 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    
-      <div className= "gradient">
-        <div className = "nav__bar">
-          <img className = "person" src = {person} alt = "person"/>
-        
-          <div className= "navbar-links">
-            <div className= "navbar-links__logo">
-              
-            </div>
-            <div className = "navbar__container">
-              <Menu />
-            </div>
-          </div>
-
-          <div className = "navbar__menu">
-            {toggleMenu 
-              ? <RiCloseLine color = "fff" size = {27} onClick = {() => setToggleMenu(false)}/>
-              : <RiMenu3Line color = "fff" size = {27} onClick = {() => setToggleMenu(true)}/>
-            }
-            {toggleMenu && (
-              <div className = "navbar-menu__container scale-up-center">
-                <div className = "navbar-menu-container__links">
-                  <Menu />
-                </div>    
-              </div>
-            )}
-          </div>
-        </div>
+    <div className = 'container'>
+      <div className = 'navbar'>
+        <Menu />
       </div>
+      <div className = "mobile">
+        {toggleMenu 
+          ? <RiCloseLine color = "fff" size = {27} onClick = {() => setToggleMenu(false)}/>
+          : <RiMenu3Line color = "fff" size = {27} onClick = {() => setToggleMenu(true)}/>
+        }
+        {toggleMenu && (
+          <div className = "navbar-menu__container scale-up-center">
+            <div className = "mobile-container__links">
+              <Menu />
+            </div>    
+          </div>
+        )}
+      </div>
+    </div>
+
+
+      // <div className= "gradient"> 
+      //   <div className = "nav__bar">
+      //     <img className = "person" src = {person} alt = "person"/>
+        
+      //     <div className= "navbar-links">
+      //       <div className= "navbar-links__logo">
+              
+      //       </div>
+      //       <div className = "navbar__container">
+      //         <Menu />
+      //       </div>
+      //     </div>
+
+      //     <div className = "navbar__menu">
+      //       {toggleMenu 
+      //         ? <RiCloseLine color = "fff" size = {27} onClick = {() => setToggleMenu(false)}/>
+      //         : <RiMenu3Line color = "fff" size = {27} onClick = {() => setToggleMenu(true)}/>
+      //       }
+      //       {toggleMenu && (
+      //         <div className = "navbar-menu__container scale-up-center">
+      //           <div className = "navbar-menu-container__links">
+      //             <Menu />
+      //           </div>    
+      //         </div>
+      //       )}
+      //     </div>
+      //   </div>
+      // </div>
   )
 }
 

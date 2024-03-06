@@ -1,49 +1,16 @@
-.nav__bar {
-    display: flex ;
-    justify-content: end;
-    align-items: center;
-    width: fit-content;
-    padding: 1rem 6rem;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.gradient {
-    background: transparent;
-}
-
-.gradient__text{
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clop: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.navbar-links{
-    flex: 1;
+.navbar{
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: end;
+    padding: 2rem 2rem;
+
 }
-
-
-.navbar-links__logo{
-    margin-right: 2rem;
-}
-
-.nav__bar img{
-    width: 50px;
-    height: 50px;
-    margin-right: 2rem;
-}
-
-.navbar__container{
-    filter: none; 
-    display: flex;
-    flex-direction: row;    
-    justify-content: end;
-}
-
-.navbar__container p,
+.navbar p,
 .navbar-menu__container p{
     color: white;
     font-family: var(--font-family);
@@ -51,21 +18,15 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
+    justify-content: end;
 
     margin: 0rem 2rem;
     cursor: pointer;
 
 }
 
-.navbar__menu {
-    margin-left: 1rem;
-
+.mobile{
     display: none;
-    position: relative;
-}
-
-.navbar__menu svg{
-    cursor: pointer;
 }
 
 .navbar-menu__container {
@@ -77,7 +38,7 @@
     text-align: end;
     background: var(--color-footer);
     padding: 2rem;
-    position: absolute;
+    position: absolute; /*This would make it not go over everything */
     top: 40px;
     right: 0;
     margin-top: 1rem;
@@ -92,34 +53,26 @@
 
 /* for computers*/
 @media screen and (max-width: 1050px) {
-    
+
 }
 
 /* for screens like ipad*/
-@media screen and (max-width: 700px) {
-    .nav__bar{
-        padding: 2rem 4rem;
+@media screen and (max-width: 700px) { 
+
+    .navbar {    
+        display: none;
     }
 
-    .navbar__menu {
+    .mobile{
         display: flex;
-    }
-    
-        
-    .navbar__container {
-            display: none;
-        }
-}
-
-@media screen and (max-width: 700px) {
-    .nav__bar{
+        justify-content: end;
         padding: 2rem 4rem;
     }
-    
 }
 
 @media screen and (max-width: 550px) {
-    .nav__bar{
+    .mobile{
+        display: flex;
         padding: 2rem 4rem;
     }
     

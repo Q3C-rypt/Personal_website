@@ -5,7 +5,9 @@ import Head from '../../Containers/Header/Header'
 const Home = () => {
   return (
     <div>
-      <Head />
+      <div className = 'head'>
+        <Head />
+      </div>
       <div className = "text">
         Welcome... This page is under developement!
       </div>
